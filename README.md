@@ -3,12 +3,13 @@
 This is a simple VU meter using an [Arduino Mega](https://www.arduino.cc/en/Main/ArduinoBoardMega2560) with two [MSGEQ7](https://www.sparkfun.com/products/10468) ICs and a multiplexed PWM controlled LED display with 14 by 10 "pixels", in my case made up of two LEDs each, with adds up to 280 LEDs.
 
 [![VU meter in action](http://xythobuz.de/img/yasavum_video.png)](https://www.youtube.com/watch?v=-yFCkL4iYBA)
+[![Finished device](http://xythobuz.de/img/yasavum6_small.jpg)](http://xythobuz.de/img/yasavum6.jpg)
+
 [![Backside of display panel](http://xythobuz.de/img/yasavum1_small.jpg)](http://xythobuz.de/img/yasavum1.jpg)
 [![Front of display panel](http://xythobuz.de/img/yasavum2_small.jpg)](http://xythobuz.de/img/yasavum2.jpg)
 
 [![Display panel wired](http://xythobuz.de/img/yasavum3_small.jpg)](http://xythobuz.de/img/yasavum3.jpg)
 [![Display panel wired](http://xythobuz.de/img/yasavum4_small.jpg)](http://xythobuz.de/img/yasavum4.jpg)
-[![Finished device](http://xythobuz.de/img/yasavum6_small.jpg)](http://xythobuz.de/img/yasavum6.jpg)
 
 ## Hardware
 
@@ -18,8 +19,8 @@ The Hardware, as well as the Software, basically consists of two parts: the MSGE
 
 MSGEQ7 is a nifty little IC that can split an analog signal into different frequency bands. It will then put out the average amplitude for seven different bands in the audible range. The basic circuitry from [the datasheet](https://www.sparkfun.com/datasheets/Components/General/MSGEQ7.pdf) is more than enough. Simply build it up two times, connecting the Strobe and Reset lines of both ICs together, so you have two inputs (Strobe and Reset) and two outputs (Left and Right). You can connect any kind of line level audio connector, I've used cinch but you can also use 3.5mm headphone connectors.
 
-[![Basic MSGEQ7 circuitry](img/yasavum_msgeq7_small.png)](img/yasavum_msgeq7.png)
-[![Arduino Mega added](img/yasavum5_small.jpg)](img/yasavum5.jpg)
+[![Basic MSGEQ7 circuitry](http://xythobuz.de/img/img/yasavum_msgeq7_small.png)](http://xythobuz.de/img/img/yasavum_msgeq7.png)
+[![Arduino Mega added](http://xythobuz.de/img/img/yasavum5_small.jpg)](http://xythobuz.de/img/img/yasavum5.jpg)
 
 ### LED Display
 
